@@ -4,46 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>HW - ITLIFE</title>
   </head>
   <body>
-    <header>
-      <a href=""><img src="image/logo.svg" alt="logo" /></a>
-      <nav>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Services</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Contacts</a></li>
+    <header class="header">
+      <a class="logo " href="#"><img src="image/logo.svg" alt="logo" /></a>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__list--item"><a class="link" href="#">Home</a></li>
+          <li class="navigation__list--item"><a class="link" href="#">Services</a></li>
+          <li class="navigation__list--item"><a class="link" href="#">About</a></li>
+          <li class="navigation__list--item"><a class="link" href="#">Contacts</a></li>
         </ul>
       </nav>
-      <button>callback</button>
+      <button class="button">callback</button>
     </header>
 
-    <main>
-      <section>
-        <h1>who we are</h1>
-        <p>
+    <main class="main">
+      <section class="about">
+        <h1 class="title">who we are</h1>
+        <div class="divider"></div>
+        <p class="description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-        <ul>
-          <li>
+        <ul class="people">
+          <li class="people-card">
             <img src="image/photo-1.png" alt="John Handson" />
             <span>John Handson</span>
             <p>Lead designer</p>
           </li>
-          <li>
+          <li class="people-card">
             <img src="image/photo-1.png" alt="Alex Cutter" />
             <span>Alex Cutter</span>
             <p>Developer</p>
           </li>
-          <li>
+          <li class="people-card">
             <img src="image/photo-2.png" alt="" />
             <span>Elena Simpson</span>
             <p>Artist</p>
           </li>
-          <li>
+          <li class="people-card">
             <img src="image/photo-3.png" alt="" />
             <span>Lily Allen</span>
             <p>Graphic Designer</p>
@@ -52,31 +59,24 @@
       </section>
     </main>
 
-    <footer>
-      <a href=""><img src="image/logo.svg" alt="logo" /></a>
-      <nav>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Services</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Contacts</a></li>
+    <footer class="footer">
+      <a class="logo logo--footer" href="#"><img src="image/logo.svg" alt="logo" /></a>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__list--item"><a class="link" href="#">Home</a></li>
+          <li class="navigation__list--item"><a class="link" href="#">Services</a></li>
+          <li class="navigation__list--item"><a class="link" href="#">About</a></li>
+          <li class="navigation__list--item"><a class="link" href="#">Contacts</a></li>
         </ul>
       </nav>
+
+      <ul class="footer__social">
+        <li class="icon"><img src="image/icon-twitter.svg" alt="twitter" /></li>
+        <li class="icon"><img src="image/icon-facebook.svg" alt="facebook" /></li>
+        <li class="icon"><img src="image/icon-instagram.svg" alt="instagram" /></li>
+        <li class="icon"><img src="image/icon-linkedin.svg" alt="linkedin" /></li>
+        <li class="icon"><img src="image/icon-telegram.svg" alt="telegram" /></li>
       <ul>
-        <li><img src="image/icon-twitter.svg" alt="twitter" /></li>
-      </ul>
-      <ul>
-        <li><img src="image/icon-facebook.svg" alt="facebook" /></li>
-      </ul>
-      <ul>
-        <li><img src="image/icon-instagram.svg" alt="instagram" /></li>
-      </ul>
-      <ul>
-        <li><img src="image/icon-linkedin.svg" alt="linkedin" /></li>
-      </ul>
-      <ul>
-        <li><img src="image/icon-telegram.svg" alt="telegram" /></li>
-      </ul>
     </footer>
   </body>
 </html>
