@@ -1,4 +1,6 @@
-/* CSS NORMALIZE */
+/* 
+CSS NORMALIZE 
+*/
 
 *,
 *::before,
@@ -32,8 +34,11 @@ image {
   height: auto;
 }
 
-/* HEADER */
+/* 
+HEADER 
+*/
 
+/* BEM BLOCK */
 .header {
   display: flex;
   justify-content: space-between;
@@ -41,10 +46,12 @@ image {
   padding: 0 135px;
 }
 
+/* BEM ELEMENT of navigation */
 .navigation__list {
   display: flex;
 }
 
+/* BEM MODIFIER */
 .navigation__list--item {
   list-style: none;
   font-size: 20px;
@@ -52,6 +59,7 @@ image {
   text-transform: uppercase;
 }
 
+/* BEM BLOCK */
 .link {
   text-decoration: none;
   color: #3c3c3c;
@@ -61,10 +69,12 @@ image {
   color: #18b5dc;
 }
 
+/* BEM MODIFIER */
 .navigation__list--item:not(:last-of-type) {
   margin-right: 30px;
 }
 
+/* BEM BLOCK */
 .button {
   text-transform: uppercase;
   font-size: 18px;
@@ -74,8 +84,11 @@ image {
   background-color: #fff;
 }
 
-/* MAIN */
+/* 
+MAIN 
+*/
 
+/* BEM BLOCK */
 .about {
   margin: 150px 135px;
   display: flex;
@@ -83,7 +96,8 @@ image {
   align-items: center;
 }
 
-.title {
+/* BEM ELEMENT of section "about" */
+.about__title {
   font-size: 37px;
   font-weight: 700;
   letter-spacing: 5px;
@@ -91,6 +105,7 @@ image {
   margin-bottom: 20px;
 }
 
+/* BEM BLOCK */
 .divider {
   height: 4px;
   width: 45px;
@@ -98,7 +113,8 @@ image {
   margin-bottom: 40px;
 }
 
-.description {
+/* BEM ELEMENT of section "about" */
+.about__description {
   text-align: center;
   max-width: 570px;
   font-weight: 300;
@@ -106,11 +122,13 @@ image {
   line-height: 1.5;
 }
 
-.people {
+/* BEM ELEMENT of section "about" */
+.about__people {
   display: flex;
   list-style: none;
 }
 
+/* BEM ELEMENT of section "people" */
 .people-card img {
   margin-bottom: 20px;
 }
@@ -130,24 +148,32 @@ image {
   margin-right: 30px;
 }
 
+.people-card img:hover {
+    background-color: #18B5DC;
+}
+
 /* FOOTER */
 
+/* BEM BLOCK */
 .footer {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* BEM ELEMENT of logo */
 .logo--footer {
   margin: 40px 0 28px 0;
 }
 
+/* BEM ELEMENT of footer */
 .footer__social {
   list-style: none;
   display: flex;
   margin: 28px 0 40px 0;
 }
 
+/* BEM BLOCK */
 .icon:not(:last-of-type) {
   margin-right: 10px;
 }
