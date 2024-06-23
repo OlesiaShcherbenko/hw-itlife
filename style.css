@@ -109,7 +109,7 @@ MAIN
 .divider {
   height: 4px;
   width: 45px;
-  color: #dddbdb;
+  background-color: #dddbdb;
   margin-bottom: 40px;
 }
 
@@ -149,7 +149,7 @@ MAIN
 }
 
 .people-card img:hover {
-    background-color: #18B5DC;
+  background-color: #18b5dc;
 }
 
 /* FOOTER */
