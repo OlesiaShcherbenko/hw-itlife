@@ -1,3 +1,12 @@
+:root {
+  --dark-braun: #3c3c3c;
+  --blue: #18B5DC;
+  --white: #fff;
+  --gray: #F6F6F6;
+  --midle-gray: #BDBDBD;
+  --dark-gray: #dddbdb;
+}
+
 /* 
 CSS NORMALIZE 
 */
@@ -14,7 +23,7 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #3c3c3c;
+  color: var(--dark-braun);
 }
 
 input,
@@ -38,15 +47,18 @@ image {
 HEADER 
 */
 
-/* BEM BLOCK */
-.header {
+.wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 135px;
 }
 
-/* BEM ELEMENT of navigation */
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .navigation__list {
   display: flex;
 }
@@ -62,11 +74,11 @@ HEADER
 /* BEM BLOCK */
 .link {
   text-decoration: none;
-  color: #3c3c3c;
+  color: var(--dark-braun);
 }
 
 .link:hover {
-  color: #18b5dc;
+  color: var(--blue);
 }
 
 /* BEM MODIFIER */
@@ -79,9 +91,15 @@ HEADER
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 500;
-  border: 1px solid #3c3c3c;
+  border: 1px solid var(--dark-braun);
   padding: 10px 20px;
-  background-color: #fff;
+  background-color: var(--white);
+}
+
+.divider-header {
+  height: 1px;
+  width: 100%;
+  background-color: var(--midle-gray);
 }
 
 /* 
@@ -90,10 +108,9 @@ MAIN
 
 /* BEM BLOCK */
 .about {
-  margin: 150px 135px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 150px 0;
+  text-align: center;
+  background-color: var(--gray);
 }
 
 /* BEM ELEMENT of section "about" */
@@ -109,22 +126,23 @@ MAIN
 .divider {
   height: 4px;
   width: 45px;
-  background-color: #dddbdb;
-  margin-bottom: 40px;
+  background-color: var(--dark-gray);
+  margin: 0 auto;
 }
 
-/* BEM ELEMENT of section "about" */
+/* How to shrink the paragraph text? */
 .about__description {
-  text-align: center;
-  max-width: 570px;
+  /* max-width: 570px; */
   font-weight: 300;
   margin-bottom: 60px;
   line-height: 1.5;
+  margin-top: 40px;
 }
 
-/* BEM ELEMENT of section "about" */
+/* How to make card line responsive? */
 .about__people {
   display: flex;
+  width: 100%;
   list-style: none;
 }
 
@@ -149,7 +167,7 @@ MAIN
 }
 
 .people-card img:hover {
-  background-color: #18b5dc;
+  background-color: var(--blue);
 }
 
 /* FOOTER */
