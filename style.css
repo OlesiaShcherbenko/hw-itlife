@@ -1,0 +1,197 @@
+:root {
+  --dark-braun: #3c3c3c;
+  --blue: #18B5DC;
+  --white: #fff;
+  --gray: #F6F6F6;
+  --midle-gray: #BDBDBD;
+  --dark-gray: #dddbdb;
+}
+
+/* 
+CSS NORMALIZE 
+*/
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--dark-braun);
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 
+HEADER 
+*/
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.navigation__list {
+  display: flex;
+}
+
+/* BEM MODIFIER */
+.navigation__list--item {
+  list-style: none;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* BEM BLOCK */
+.link {
+  text-decoration: none;
+  color: var(--dark-braun);
+}
+
+.link:hover {
+  color: var(--blue);
+}
+
+/* BEM MODIFIER */
+.navigation__list--item:not(:last-of-type) {
+  margin-right: 30px;
+}
+
+/* BEM BLOCK */
+.button {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+  border: 1px solid var(--dark-braun);
+  padding: 10px 20px;
+  background-color: var(--white);
+}
+
+.divider-header {
+  height: 1px;
+  width: 100%;
+  background-color: var(--midle-gray);
+}
+
+/* 
+MAIN 
+*/
+
+/* BEM BLOCK */
+.about {
+  padding: 150px 0;
+  text-align: center;
+  background-color: var(--gray);
+}
+
+/* BEM ELEMENT of section "about" */
+.about__title {
+  font-size: 37px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/* BEM BLOCK */
+.divider {
+  height: 4px;
+  width: 45px;
+  background-color: var(--dark-gray);
+  margin: 0 auto;
+}
+
+/* How to shrink the paragraph text? */
+.about__description {
+  /* max-width: 570px; */
+  font-weight: 300;
+  margin-bottom: 60px;
+  line-height: 1.5;
+  margin-top: 40px;
+}
+
+/* How to make card line responsive? */
+.about__people {
+  display: flex;
+  width: 100%;
+  list-style: none;
+}
+
+/* BEM ELEMENT of section "people" */
+.people-card img {
+  margin-bottom: 20px;
+}
+
+.people-card span {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.people-card p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.people-card:not(:last-of-type) {
+  margin-right: 30px;
+}
+
+.people-card img:hover {
+  background-color: var(--blue);
+}
+
+/* FOOTER */
+
+/* BEM BLOCK */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* BEM ELEMENT of logo */
+.logo--footer {
+  margin: 40px 0 28px 0;
+}
+
+/* BEM ELEMENT of footer */
+.footer__social {
+  list-style: none;
+  display: flex;
+  margin: 28px 0 40px 0;
+}
+
+/* BEM BLOCK */
+.icon:not(:last-of-type) {
+  margin-right: 10px;
+}
